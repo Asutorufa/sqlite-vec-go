@@ -28,4 +28,4 @@ go.work.sum
 .env
 
 /output
-/sqlite-vec.wasm
+/.vscode

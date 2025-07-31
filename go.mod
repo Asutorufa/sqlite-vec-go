@@ -1,4 +1,4 @@
-module sqlite-vec
+module github.com/Asutorufa/sqlite-vec-go
 
 go 1.24.4
 

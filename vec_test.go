@@ -1,21 +1,13 @@
-package main
+package sqlitevecgo
 
 import (
-	_ "embed"
 	"fmt"
+	"testing"
 
-	"github.com/ncruces/go-sqlite3"
 	"github.com/ncruces/go-sqlite3/driver"
 )
 
-//go:embed sqlite-vec.wasm
-var binary []byte
-
-func init() {
-	sqlite3.Binary = binary
-}
-
-func main() {
+func TestVec(t *testing.T) {
 	db, err := driver.Open(":memory:")
 	if err != nil {
 		panic(err)
